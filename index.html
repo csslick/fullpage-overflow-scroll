@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>fullPage.js - Base example</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- 메뉴는 fullpage 바깥에 추가 
+  data-menuanchor와 동명의 섹셕 id 값을 fullpage({}) 옵션anchors[]에 추가
+-->
+<ul id="menu">
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+	<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+	<li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+</ul>
+<div id="fullpage">
+    <div class="section" id="section1">
+      <h1>Portfolio</h1>
+    </div>
+
+  
+    <div class="section" id="section2">
+      <h1>My Works</h1>
+        <div class="slide" data-anchor="slide1">
+          <ul>
+            <li>
+              <img src="http://placeimg.com/300/300/a" alt="">
+              <img src="http://placeimg.com/300/300/b" alt="">
+            </li>
+            <li>
+              <h4>멋진 나의 작품 1</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="slide" data-anchor="slide2">
+          <ul>
+            <li>
+              <img src="http://placeimg.com/300/300/c" alt="">
+              <img src="http://placeimg.com/300/300/d" alt="">
+            </li>
+            <li>
+              <h4>멋진 나의 작품 2</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, beatae.</p>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- 스크롤 콘텐츠 영역 -->
+    <div class="section fp-auto-heigh fp-auto-height-responsive" id="section3">
+      <h1>Overflow Scroll</h1>
+      <div class="container">
+        <div class="box">작품 1</div>
+        <div class="box">작품 2</div>
+        <div class="box">작품 3</div>
+        <div class="box">작품 4</div>
+      </div>
+    </div>
+
+    <div class="section" id="section4">
+      <h1>Fourth</h1>
+      <img src="./rocket.png" alt="rocket" id="rocket">
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- overflowScroll 플러그인 -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js'></script>
+  <!-- fullpage -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script>
+    
+  </script><script  src="./script.js"></script>
+
+</body>
+</html>
