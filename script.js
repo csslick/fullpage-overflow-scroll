@@ -15,7 +15,7 @@ $(document).ready(function () {
     // 페이지 진입시(액션)
     afterLoad: function (anchorLink, index) {
       console.log(index);
-      // 3번째 페이지에 들어오면
+      // 4번째 페이지에 들어오면
       if(index == 4) {
         $('#section4 > div').append('<p>원대한 꿈에 도약합니다!</p>');
         $('#rocket').addClass('play');
